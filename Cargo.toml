@@ -1,7 +1,8 @@
 [package]
-name = "kyaung-os"
+name = "kyaung_os"
 version = "0.1.0"
 edition = "2021"
 authors = ["Aung Tay Zar Maung aungtayzarmaung@gmail.com"]
 
 [dependencies]
+bootloader = "0.9.8"
