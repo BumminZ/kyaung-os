@@ -13,7 +13,8 @@ fn panic(_info: &PanicInfo) -> ! {
 
 #[no_mangle] // don't mangle the name of this function
 pub extern "C" fn _start() -> ! {
-    vga_buffer::print_something();
-    // this function is the entry point, since the linker looks for a function named `_start` by default
+    println!("Hello World{}", "!");
+
+    // this loop prevents from exit after the code end
     loop {}
 }
